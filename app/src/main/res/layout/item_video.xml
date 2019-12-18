@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:background="@drawable/bg_dialog"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/relative_layout_item_imge"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_margin="13dp"
+                        android:textSize="16dp"
+                        android:id="@+id/text_view_image_item_title"
+                        android:textColor="@color/primary_text"
+                        android:textStyle="bold"
+                        android:text="Water Wallpaper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp" />
+                    <RelativeLayout
+                        android:layout_centerVertical="true"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:tint="@color/primary_text"
+                            app:srcCompat="@drawable/ic_share_app"
+                            android:layout_width="15dp"
+                            android:layout_height="50dp" />
+                        <TextView
+                            android:textSize="13dp"
+                            android:id="@+id/text_view_downloads"
+                            android:gravity="center"
+                            android:textColor="@color/primary_text"
+                            android:text="2K Views"
+                            android:layout_marginLeft="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@drawable/border_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:adjustViewBounds="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bg_transparant"
+                        android:id="@+id/image_view_image_item_image"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp" />
+                    <RelativeLayout
+                        android:elevation="4dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/relative_layout_item_image_review"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:background="@drawable/border_views"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:tint="@color/white"
+                            app:srcCompat="@drawable/ic_access_time"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:text="@string/on_review"
+                            android:layout_marginLeft="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relative_layout_dialog_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="12dp"
+                        android:gravity="center|left"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circle_image_view_image_item_user"
+                            android:src="@drawable/profile"
+                            android:layout_width="24dp"
+                            android:layout_height="25dp" />
+                        <TextView
+                            android:layout_marginLeft="4dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textStyle="bold"
+                            android:textSize="13dp"
+                            android:textColor="@color/primary_text"
+                            android:id="@+id/text_view_image_item_name_user"
+                            android:text="user name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10dp"
+                        android:visibility="visible"
+                        android:elevation="7dp"
+                        android:gravity="top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp">
+                        <android.support.v7.widget.CardView
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            app:cardBackgroundColor="#a1ffffff"
+                            app:cardUseCompatPadding="false"
+                            app:cardElevation="0dp"
+                            app:cardCornerRadius="20dp"
+                            android:layout_margin="0dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp">
+                                <com.like.LikeButton
+                                    android:visibility="visible"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:id="@+id/like_button_delete_image_item"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:circle_end_color="#ff0048"
+                                    app:circle_start_color="#0f89a4"
+                                    app:dots_primary_color="#ff0048"
+                                    app:dots_secondary_color="#0f89a4"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    app:icon_size="30dp"
+                                    app:anim_scale_factor="10"
+                                    app:like_drawable="@drawable/ic_delete"
+                                    app:unlike_drawable="@drawable/ic_delete" />
+                                <com.like.LikeButton
+                                    android:visibility="visible"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:id="@+id/like_button_fav_image_item"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:circle_end_color="#ff0048"
+                                    app:circle_start_color="#0f89a4"
+                                    app:dots_primary_color="#ff0048"
+                                    app:dots_secondary_color="#0f89a4"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    app:icon_size="30dp"
+                                    app:anim_scale_factor="10"
+                                    app:like_drawable="@drawable/ic_favorite"
+                                    app:unlike_drawable="@drawable/ic_favorite_border" />
+                                <com.like.LikeButton
+                                    android:visibility="visible"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:id="@+id/like_button_whatsapp_image_item"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:circle_end_color="#5CAA4F"
+                                    app:circle_start_color="#7FD371"
+                                    app:dots_primary_color="#5CAA4F"
+                                    app:dots_secondary_color="#7FD371"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    app:icon_size="30dp"
+                                    app:anim_scale_factor="10"
+                                    app:like_drawable="@drawable/ic_whatsapp"
+                                    app:unlike_drawable="@drawable/ic_whatsapp" />
+                                <com.like.LikeButton
+                                    android:visibility="gone"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:id="@+id/like_button_messenger_image_item"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:circle_end_color="#0656F7"
+                                    app:circle_start_color="#3AD5F9"
+                                    app:dots_primary_color="#0656F7"
+                                    app:dots_secondary_color="#3AD5F9"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    app:icon_size="30dp"
+                                    app:anim_scale_factor="10"
+                                    app:like_drawable="@drawable/ic_messenger"
+                                    app:unlike_drawable="@drawable/ic_messenger" />
+                                <com.like.LikeButton
+                                    android:visibility="gone"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:id="@+id/like_button_facebook_image_item"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:circle_end_color="#064D93"
+                                    app:circle_start_color="#5397EA"
+                                    app:dots_primary_color="#064D93"
+                                    app:dots_secondary_color="#5397EA"
+                                    app:icon_size="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    app:anim_scale_factor="10"
+                                    app:like_drawable="@drawable/ic_facebook"
+                                    app:unlike_drawable="@drawable/ic_facebook" />
+                                <com.like.LikeButton
+                                    android:visibility="gone"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:id="@+id/like_button_instagram_image_item"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:circle_end_color="#8A3293"
+                                    app:circle_start_color="#FEA150"
+                                    app:dots_primary_color="#8A3293"
+                                    app:dots_secondary_color="#FEA150"
+                                    app:icon_size="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    app:anim_scale_factor="10"
+                                    app:like_drawable="@drawable/ic_instagram"
+                                    app:unlike_drawable="@drawable/ic_instagram" />
+                                <com.like.LikeButton
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:id="@+id/like_button_share_image_item"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:circle_end_color="#a42783"
+                                    app:circle_start_color="#2751be"
+                                    app:dots_primary_color="#a42783"
+                                    app:dots_secondary_color="#2751be"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    app:icon_size="30dp"
+                                    app:anim_scale_factor="10"
+                                    app:like_drawable="@drawable/ic_share"
+                                    app:unlike_drawable="@drawable/ic_share" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:background="@drawable/progress_bg_box"
+                android:elevation="100dp"
+                android:visibility="visible"
+                android:id="@+id/relative_layout_progress_image_item"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="40dp">
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/image_view_cancel_image_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/text_view_progress_image_item"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:gravity="left|center"
+                        android:text="Downloading : 00%"
+
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp" />
+                    <ProgressBar
+                        android:progressDrawable="@drawable/progress_bg"
+                        android:progress="10"
+                        android:id="@+id/progress_bar_item_image"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+                </LinearLayout>
+                <ImageView
+                    android:visibility="visible"
+                    android:id="@+id/image_view_cancel_image_item"
+                    android:padding="6dp"
+                    android:tint="#ec008c"
+                    app:srcCompat="@drawable/ic_file_download"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

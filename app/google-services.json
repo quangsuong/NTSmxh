@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "678138082548",
+    "firebase_url": "https://ntsmxh.firebaseio.com",
+    "project_id": "ntsmxh",
+    "storage_bucket": "ntsmxh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678138082548:android:8a0f987987f2a5e3f75aa1",
+        "android_client_info": {
+          "package_name": "net.blogsv.ntsmxh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678138082548-sji5a7956k4inhvvhnf0hsqrn5b2ar6h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.blogsv.ntsmxh",
+            "certificate_hash": "4904a7f17b738053c31d4c1e595b14b552a50d1c"
+          }
+        },
+        {
+          "client_id": "678138082548-el2j00q09731skcblm8jiepegq06h5ui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvOXmQtUiMaOwbHNMu_LmcAbCG-xBmG2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678138082548-el2j00q09731skcblm8jiepegq06h5ui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
